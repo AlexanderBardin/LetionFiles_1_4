@@ -13,12 +13,12 @@ def is_closed(file_):
 
 
 # Пример 1 - Открыть файл, прочитать закрыть
-# with open('data.txt') as f:
-#     print(type(f))
-#     data = f.read()
-#     is_closed(f)
-#
-# is_closed(f)
+with open('data.txt') as f:
+    print(type(f))
+    data = f.read()
+    is_closed(f)
+
+is_closed(f)
 
 # with open('data.txt') as f:
 #     data = f.read()
@@ -26,10 +26,10 @@ def is_closed(file_):
 #     1 / 0
 
 
-try:
-    with open('data.txt') as f:
-        data = f.read()
-        is_closed(f)
-        1 / 0
-except ZeroDivisionError:
-    is_closed(f)
+# try:
+#     with open('data.txt') as f:
+#         data = f.read()
+#         is_closed(f)
+#         1 / 0
+# except ZeroDivisionError:
+#     is_closed(f)
